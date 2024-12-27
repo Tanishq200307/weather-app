@@ -11,17 +11,20 @@
     <div class="card">
         <div class="search">
             <input type="text" placeholder="enter city name" spellcheck="false">
-            <button><img src="images/search.png"></button>
+            <button style="width: 50px; height: 50px; padding: 10px;">
+                <img src="images/search.png" style="width: 16px;">
+            </button>
+            
         </div>
         <div class="error">
             <p>Invalid City Name</p>
         </div>
         <!-- Weather section corrected by moving h1 and h2 inside .weather div -->
         <div class="weather">
-            <img src="images/rain.png" class="weather-icon">
+            <img src="images/rain.png" class="weather-icon" 
+                srcset="images/rain.png 1x, images/rain@2x.png 2x">
             <h1 class="temp">22°c</h1>
-            <h2 class="city">Mumbai</h2>   
-        
+            <h2 class="city">Mumbai</h2>           
         <div class="details"> 
             <div class="col">
                 <img src="images/humidity.png">
