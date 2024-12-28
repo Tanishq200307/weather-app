@@ -5,23 +5,70 @@
     box-sizing: border-box;
 }
 body{
-    background: #70716e;
+    background-image: url(images/bgmain2.jpg);
 }
+
 .card{
     width: 90%;
     max-width: 470px;
-    background: linear-gradient(135deg,#090348,#5b548a);
-    color: #fff;
+    background: transparent;
+    color: #0b0b0b;
     margin: 100px auto 0;
     border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
+}
+@media screen and (max-width: 600px) {
+    .card {
+        margin: 50px auto; /* Reduce margin on mobile */
+        padding: 20px 15px; /* Adjust padding for smaller screens */
+    }
+
+    .search input {
+        font-size: 16px; /* Smaller font on mobile */
+        padding: 8px 20px; /* Adjust padding for smaller devices */
+    }
+
+    .search button {
+        width: 50px; /* Smaller button size on mobile */
+        height: 50px; /* Smaller button size on mobile */
+    }
+
+    .weather h1 {
+        font-size: 60px; /* Adjust font size for weather */
+    }
+
+    .weather h2 {
+        font-size: 30px; /* Adjust font size for weather */
+    }
+
+    .details {
+        flex-direction: column; /* Stack items on small screens */
+        padding: 10px 0;
+    }
+
+    .col {
+        flex-direction: column;
+        align-items: flex-start; /* Stack icon and text */
+    }
+
+    .col img {
+        margin-bottom: 10px;
+    }
 }
 .search{
     width : 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;  
+}
+.search input {
+    width: 100%; /* Full width on mobile */
+    max-width: 300px; /* Limit width for larger screens */
+}
+
+.search button {
+    margin-top: 10px; /* Add some space if the button shifts */
 }
 .search input{
     border: 0;
@@ -52,6 +99,11 @@ body{
     width: 170px;
     margin-top: 30px;  
 }
+@media screen and (max-width: 600px) {
+    .weather-icon {
+        width: 120px; /* Smaller size on mobile */
+    }
+}
 .weather h1{
     font-size: 80px;
     font-weight: 500;
@@ -71,6 +123,13 @@ body{
     padding: 0 20px;
     margin-top: 50px;
 }
+@media screen and (max-width: 600px) {
+    .details {
+        flex-direction: column; /* Stack details vertically on mobile */
+        align-items: flex-start;
+        margin-top: 30px;
+    }
+}
 .col{
     display: flex;
     align-items: center;
@@ -84,6 +143,11 @@ body{
     font-size: 19px;
     margin-top: -6;
 
+}
+@media screen and (max-width: 600px) {
+    .humidity, .wind {
+        font-size: 16px; /* Smaller font size for mobile */
+    }
 }
 .weather{
     display: none;
