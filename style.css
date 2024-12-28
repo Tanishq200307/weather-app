@@ -5,12 +5,12 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url(images/bgmain2.jpg);
+    background: lightblue;
 }
 .card{
     width: 90%;
     max-width: 470px;
-    background: transparent;
+    background: rgb(63, 164, 197);
     color: #0b0b0b;
     margin: 100px auto 0;
     border-radius: 20px;
