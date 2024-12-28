@@ -7,7 +7,6 @@
 body{
     background-image: url(images/bgmain2.jpg);
 }
-
 .card{
     width: 90%;
     max-width: 470px;
@@ -98,11 +97,6 @@ body{
 .weather-icon{
     width: 170px;
     margin-top: 30px;  
-}
-@media screen and (max-width: 600px) {
-    .weather-icon {
-        width: 120px; /* Smaller size on mobile */
-    }
 }
 .weather h1{
     font-size: 80px;
